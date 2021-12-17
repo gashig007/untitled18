@@ -6,7 +6,7 @@ public class Main {
 	Boss boss = new Boss();
         boss.setHeight(300);
         boss.setDamage(20);
-        boss.setWeapon("pistol");
+        boss.setWeapon();
         System.out.println(boss.getHeight() + " " + boss.getDamage() + " " + boss.getWeapon());
     }
 }

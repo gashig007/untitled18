@@ -7,7 +7,7 @@ public class Boss extends GameEntity{
         return weapon;
     }
 
-    public void setWeapon(Weapon weapon) {
+    public void setWeapon() {
         this.weapon = weapon;
     }
 }
