@@ -6,7 +6,7 @@ public class Boss extends GameEntity{
 
     }
     public String info(){
-        return ("HP " + getHeight() + "Damage " + getDamage() + "type name " + getWeapon_type() + "weapon name "
-                + getWeapon_name());
+        return ("HP: " + getHeight() + "\nDamage: " + getDamage() + "\ntype name: " + getWeapon_type()
+                + "\nweapon name: " + getWeapon_name());
     }
 }
