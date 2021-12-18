@@ -1,12 +1,22 @@
 package com.company;
 
 public class Boss extends GameEntity{
-    public Boss(String weapon_type, String weapon_name, int height, int damage) {
-        super(weapon_type, weapon_name, height, damage);
+Weapon weapon = new Weapon();
 
+    public Weapon getWeapon() {
+        return weapon;
     }
+
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
+    }
+
+    public Boss(int height, int damage) {
+        super(height, damage);
+    }
+
     public String info(){
-        return ("HP: " + getHeight() + "\nDamage: " + getDamage() + "\ntype name: " + getWeapon_type()
-                + "\nweapon name: " + getWeapon_name());
+        return  "HP: " + getHeight() + "\nDamage: " + getDamage() + "\nweapon type: " + weapon.getWeapon_type() + "\nweapon name: "
+                + weapon.getWeapon_name();
     }
 }
